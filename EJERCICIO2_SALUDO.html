@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Mayuscula</title>
+</head>
+<body>
+    <ul>
+        <li>Ejercicio 2:Crear un programa que pida el nombre al usuario y los salude. La primera letra del nombre al saludar siempre debe estar en mayúsculas y el resto en minúsculas, sin importar la forma en la que el usuario ingresó su nombre.</li>
+    </ul>
+    <hr>
+    <form>
+        <input type="text"  id="Nombre" placeholder="Ingrese su nombre" size="30">
+        <input type="button" value="Varificar Texto" onclick="alert( saludo() );">
+    </form>
+
+    <script>
+       var nombre=prompt("Escriba el nombre del usuario");
+        nombre=nombre.toLowerCase();
+        nombre=nombre[0].toUpperCase() + nombre.substring(1);
+    alert("Saludos " + nombre);
+        
+    </script>
+</body>
+</html>

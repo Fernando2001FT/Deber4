@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1_Limites</title>
+</head>
+<body>
+    <ul>
+        <li class="Titulo">Ejercico 1 :Crear un programa que reciba un texto del usuario y le diga cuántos caracteres ha escrito y cuantos le faltan para llegar a 280 caracteres (limite en Twitter).</li>
+    </ul>
+    <hr>
+    <form>
+        <input type="text"  id="Frase" placeholder="Ingresa su twitter" size="50">
+        <input type="button" value="Varificar Texto" onclick="alert( caracteres() );">
+    </form>
+
+    <script>
+     
+        var texto=prompt("Escriba un texto para poder contar y cuantos le falta:");
+var numeroDeCaracteres=texto.length;
+alert("Tiene " + numeroDeCaracteres + " caracteres y le faltan: " + (280 - numeroDeCaracteres) + " para llegar a 280.");
+
+    </script>
+</body>
+</html>

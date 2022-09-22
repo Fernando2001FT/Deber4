@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totalidad de botellas</title>
+</head>
+<body>
+    <ul>
+        <li>Ejercicio 3:Crear una función que devuelva la cantidad de botellas de agua que puedo comprar con una cantidad de dinero (parámetro), imprimir este valor en una frase (fuera de la función) como: “Ha comprado x botellas de agua”. Cada botella cuesta 0.75. Consultar función floor()</li>
+    </ul>
+    <hr>
+    <form action="">
+        <input type="number"  id="efectivo" placeholder="Ingrese el dinero por favor" size="10">
+        <label for="">$ Dolares Monedad/Billetes</label>
+        <input type="button" value="Comprar" onclick="alert( botellas(10) );">
+    </form>
+   
+    <script>
+        //funcion
+        var botellas = function(efectivo)
+        {
+            var efectivo= parseFloat(document.getElementById("efectivo").value);
+            var Total = Math.floor(efectivo/=0.75);
+            return  ('Usted tiene el dinero suficiente para comprar : ' + Total + ' botella de agua');
+        }
+    </script>
+</body>
+</html>
